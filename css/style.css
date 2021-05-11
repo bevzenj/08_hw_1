@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Miso Bold';          
+    src: url("../fonts/miso-bold.ttf");  
+    font-weight: 700;                  
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Miso Light';          
+    src: url("../fonts/miso-light.ttf");   
+    font-weight: 400;                 
+    font-style: normal;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: #fdde7e;
+}
+
+.bronze, .gold, .silver {
+    width: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    margin: 80px 15px;
+    padding-top: 50px;
+}
+
+.cost {
+    font-family: 'Miso Bold';
+    font-size: 70px;
+    color: #02995b;
+}
+
+.name_coffe {
+    font-family: 'Miso Light';
+    font-size: 56px;
+    color: #333333;
+}
+
+.description_coffe {
+    text-align: center;
+    width: 50%;
+    font-family: 'Miso Light';
+    font-size: 30px;
+    color: #333333;
+}
+
+.cup_img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_img {
+    width: fit-content;
+    margin: 10px 0;
+}
+
+.cup_img::after {
+    content: url("../image/bean.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.bronze:hover, .gold:hover, .silver:hover {
+    transition-duration: 0.7s;
+    margin: 50px 0;
+}
